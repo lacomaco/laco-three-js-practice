@@ -10,13 +10,13 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1); // 흰색 조명, 강도 1
-directionalLight.position.set(5, 10, 7.5); // 조명의 위치 설정
-directionalLight.castShadow = true; // 그림자 생성 (필요시)
+directionalLight.position.set(5, 10, 7.5);
+// directionalLight.castShadow = true; // 그림자 생성 지금은 필없는듯
 scene.add(directionalLight);
 
-// 헬멧의 후면을 밝히는 추가적인 방향성 조명
+// 헬멧 후면 라이팅
 const backLight = new THREE.DirectionalLight(0xffffff, 1);
-backLight.position.set(-10, 10, -10); // 헬멧의 후면에서 빛을 비추도록 위치 설정
+backLight.position.set(-10, 10, -10);
 scene.add(backLight);
 
 camera.position.z = 5;
