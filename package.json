@@ -1,0 +1,44 @@
+{
+    "name": "laco-three-js-practice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "rollup -c",
+      "dev": "nodemon",
+      "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
+      "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
+    },
+    "author": "",
+    "license": "cc-by-4.0",
+    "devDependencies": {
+      "@rollup/plugin-commonjs": "^24.1.0",
+      "@rollup/plugin-json": "^6.0.0",
+      "@rollup/plugin-node-resolve": "^15.0.2",
+      "@types/p5": "^1.6.2",
+      "dat.gui": "^0.7.9",
+      "eslint": "^8.55.0",
+      "eslint-config-prettier": "^9.1.0",
+      "eslint-plugin-prettier": "^5.0.1",
+      "nodemon": "^2.0.22",
+      "prettier": "^3.1.0",
+      "rollup": "^3.20.6",
+      "rollup-plugin-string": "^3.0.0",
+      "rollup-plugin-typescript2": "^0.34.1",
+      "typescript": "^5.0.4"
+    },
+    "dependencies": {
+      "@mohayonao/perlin-noise": "^0.2.0",
+      "@types/node": "^20.8.10",
+      "@types/three": "^0.158.3",
+      "@webgpu/types": "^0.1.38",
+      "gl-matrix": "^3.4.3",
+      "lodash-es": "^4.17.21",
+      "rxjs": "^7.8.0",
+      "simplex-noise": "^4.0.1",
+      "three": "^0.158.0",
+      "twgl.js": "^5.5.3"
+    }
+}
